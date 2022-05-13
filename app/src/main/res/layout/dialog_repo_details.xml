@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_50"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="@dimen/width_120"
+            android:layout_height="@dimen/height_120"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_16" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="16dp"
+            android:textSize="@dimen/text_size_26" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_repo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginEnd="16dp"
+            android:textSize="@dimen/text_size_20" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/creation_date"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_repo_creation_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_22"
+            android:textStyle="normal"
+            tools:text="May 12 2022" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/last_modification_date"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_repo_last_modification_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_22"
+            android:textStyle="normal"
+            tools:text="May 13 2022" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/languages"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_languages"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_contributors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/contributors"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_contributors"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/TestAppProgressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_12" />
+    </LinearLayout>
+</FrameLayout>

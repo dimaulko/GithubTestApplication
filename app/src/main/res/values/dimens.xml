@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_48">48dp</dimen>
+    <dimen name="width_56">56dp</dimen>
+    <dimen name="width_82">82dp</dimen>
+    <dimen name="width_120">120dp</dimen>
+
+    <dimen name="height_48">48dp</dimen>
+    <dimen name="height_56">56dp</dimen>
+    <dimen name="height_82">82dp</dimen>
+    <dimen name="height_120">120dp</dimen>
+    <dimen name="height_128">128dp</dimen>
+
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_56">56dp</dimen>
+
+    <dimen name="padding_8">8dp</dimen>
+
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+</resources>

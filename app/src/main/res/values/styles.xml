@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TestAppProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">@dimen/width_48</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:layout_marginTop">@dimen/margin_16</item>
+        <item name="android:indeterminateTint">@color/progressBarColor</item>
+    </style>
+</resources>

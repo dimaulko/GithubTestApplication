@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/default_ripple.xml" value="0.2055" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16767983789260385" />
+        <entry key="app/src/main/res/layout/dialog_repo_details.xml" value="0.14427083333333332" />
+        <entry key="app/src/main/res/layout/repo_details.xml" value="0.3183876811594203" />
+        <entry key="app/src/main/res/layout/vh_adapter_contributor.xml" value="0.3179347826086957" />
+        <entry key="app/src/main/res/layout/vh_adapter_footer.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/vh_adapter_language.xml" value="0.3179347826086957" />
+        <entry key="app/src/main/res/layout/vh_adapter_repos.xml" value="0.2848731884057971" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

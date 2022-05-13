@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/v_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16" />
+
+    <RadioGroup
+        android:id="@+id/rg_sorting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_search"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"
+            android:text="@string/radio_button_stars" />
+
+        <RadioButton
+            android:id="@+id/radio_forks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/radio_button_forks" />
+
+        <RadioButton
+            android:id="@+id/radio_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/radio_button_updated" />
+    </RadioGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_sorting"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_validation_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_56"
+        android:text="@string/for_start_search_input_any_char"
+        android:textSize="@dimen/text_size_20"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
